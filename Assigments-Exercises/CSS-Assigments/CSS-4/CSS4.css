@@ -5,20 +5,65 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-
+    background-color: #000000;
 }
 
 /* h1 */
+h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #f1f1f1;
+}
 
 /* #subtitle */
+#subtitle {
+    text-align: center;
+    font-family:  'Montserrat',  sans-serif;
+    color: #f1f1f1;
+}
 
 /* .flexboxContainer */
+.flexboxContainer {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
 
 /*.flexboxContainer > div */
+.flexboxContainer > div {
+    width: 20%;
+    height: 50%;
+    background-image: linear-gradient(to right, rgba(12, 62, 224, 0), rgb(150, 105, 47));
+    flex-direction: column;
+    gap: 5%;
+    padding: 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 50px;
+}
 
 /* a */
+a {
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
 
 /* img */
+img {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
 
 /* .flexboxContainer > div:hover */
-
+.flexboxContainer > div:hover {
+    background-color: rgba(0, 128, 0, 0.50);
+    box-shadow: -10px -10px 30px rgba(0, 128, 0, 0.50), 10px 10px 30px rgba(0, 128, 0, 0.50);
+}
